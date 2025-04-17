@@ -4,13 +4,11 @@ import { useParams, useNavigate } from 'react-router-dom';
 import './style.css'; 
 import CodeBlockHeader from './components/CodeBlockHeader';
 import CodeEditor from './components/CodeEditor';
-import QuestionsAndCommentsSection from './components/QuestionsAndCommentsSection';
 import Chat from './chat'; 
 
 export default function CodeBlockPage() {
   const { id } = useParams();
   const navigate = useNavigate();
-
   const [blockData, setBlockData] = useState(null);
   const [code, setCode] = useState('');
   const [role, setRole] = useState(null);
