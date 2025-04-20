@@ -1,4 +1,4 @@
 import { io } from 'socket.io-client';
-
-const socket = io('https://codepage-2.onrender.com');
+import {API} from '../config'
+const socket = io(API);
 export default socket;
